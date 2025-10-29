@@ -1,0 +1,12 @@
+name: LocalModelInstaller
+version: 0.1.0
+description: "Install and manage local LLM weights/providers via Python."
+author: AdaOS
+intents:
+  - llm.model.install
+  - llm.model.list
+  - llm.model.use
+permissions:
+  - net.access
+  - fs.write
+

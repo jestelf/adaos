@@ -8,3 +8,10 @@ src/adaos/orchestrator/
 src/adaos/devportal/
 src/adaos/store/
 .adaos_1
+# Local model caches
+.adaos/cache/models/
+.adaos/cache/local_models/
+.adaos/local_models/
+
+# HuggingFace snapshots
+*/*.hf_cache/

@@ -1,0 +1,21 @@
+name: "Ollama Local"
+provider: "ollama"
+base_url: "http://127.0.0.1:11434/v1"
+api_key_env: null
+usage: ["authoring", "runtime"]
+default_model: "llama3.2:3b-instruct"
+models:
+  - { id: "llama3.2:3b-instruct", role: "runtime", size: "3B" }
+  - { id: "llama3.1:8b-instruct", role: "authoring", size: "8B" }
+  - { id: "qwen2.5:7b-instruct", role: "authoring", size: "7B" }
+  - { id: "qwen2.5:3b-instruct", role: "runtime", size: "3B" }
+  - { id: "mistral:7b-instruct", role: "authoring", size: "7B" }
+  - { id: "phi3:mini", role: "runtime", size: "3.8B" }
+  - { id: "gemma2:2b-instruct", role: "runtime", size: "2B" }
+  - { id: "neural-chat:7b-v3.3", role: "authoring", size: "7B" }
+  - { id: "openhermes:2.5-mistral", role: "authoring", size: "7B" }
+install:
+  windows: { script: "install.ps1" }
+  linux: { script: "install.sh" }
+  darwin: { script: "install.sh" }
+
